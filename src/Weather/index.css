@@ -1,0 +1,89 @@
+.cityName{
+    font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  .time{
+    color: rgba(52, 58, 64, 0.90);
+
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+.card-2{
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+.degree{
+    color: var(--main2, #343A40);
+    font-family: Roboto;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0;
+}
+.time-sm{
+    color: rgba(52, 58, 64, 0.80);
+text-align: center;
+font-family: Roboto;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.degree-sm{
+    color: var(--main2, #343A40);
+text-align: center;
+font-family: Roboto;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.weather-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.day-details{
+    margin-left: 100px;
+}
+
+@media (max-width:480px) {
+    .card-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        padding-left: 13px;
+        padding-top: 5px;
+        height: 340px;
+    }
+    .cityName{
+        font-size: 20px;
+    }
+    .time{
+        font-size: 15px;
+    }
+    .degree{
+        font-size: 40px;
+    }
+    .day-details{
+        margin-left: 19px;
+        margin-top: 10px;
+    }
+    .time-sm{
+        font-size: 20px;
+    }
+    .degree-sm{
+        font-size: 20px;
+    }
+}

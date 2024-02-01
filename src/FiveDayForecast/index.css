@@ -1,0 +1,59 @@
+.forecast-h1{
+    font-size: 24px;
+    font-family: 'Roboto';
+    opacity: 0.8;
+    font-weight: normal;
+    text-align: center;
+    width: 230px;
+}
+.forecast-p{
+    font-size: 18px;
+    font-family: 'Roboto';
+    opacity: 0.8;
+    font-weight: normal;
+    text-align: center;
+    width: 230px;
+}
+.forecast-container{
+    display: flex;
+    justify-content: space-between;
+}
+.card-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 40px;
+}
+.card-details{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.day{
+    padding-right: 70px;
+    
+}
+hr{
+    color: black;
+    width: 1200px;
+}
+
+@media (max-width:480px){
+    hr{
+        width: 300px;
+    }
+    .forecast-h1{
+        width: 60px;
+        font-size: 10px;
+    }
+    .forecast-p{
+        width: 60px;
+        font-size: 9px;
+    }
+    .day{
+        padding-right: 10px;
+    }
+    .card-4{
+        padding-top: 20px;
+    }
+}

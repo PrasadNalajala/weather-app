@@ -7,9 +7,6 @@
   pointer-events: none;
 }
 
-.bg{
-  background-color: black;
-}
 .card{
   background-color: #343A40;
   display: flex;
@@ -37,14 +34,13 @@
   display: flex;
   justify-content: center;
 }
-
 .degreeParams{
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40px;
-  width: 170px;
+  width: 100px;
   font-family: 'Roboto';
   border-radius: 5px;
   color: #343A40;
@@ -53,34 +49,42 @@
 .degreeBtn{
   background-color: transparent;
   border: none;
-  
+  cursor: pointer;
 }
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+@media (max-width:480px){
+  .searchInput{
+    width: 200px;
+    height: 25px;
+    margin: 0;
+    margin-left: 5px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .search-icon{
+    height: 25px;
+    margin: 0;
+    
   }
-  to {
-    transform: rotate(360deg);
+  .para{
+    display: none;
+  }
+  .degreeParams{
+    height: 20px;
+    padding: 3px;
+    width: 50px;
+  }
+  .card{
+    height: 70px;
+  }
+  .section-2{
+    align-items: center;
+  }
+  .degreeBtn{
+    font-size: 12px;
+  }
+  span{
+    font-size: 12px;
+  }
+  .search{
+    display: none;
   }
 }
