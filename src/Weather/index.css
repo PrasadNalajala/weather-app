@@ -56,6 +56,11 @@ line-height: normal;
 .day-details{
     margin-left: 100px;
 }
+.rain{
+    background-image: url("https://wallpapercave.com/wp/xREMNH6.jpg");
+    background-size: cover;
+    color: #ffffff;
+}
 
 @media (max-width:480px) {
     .card-2{
