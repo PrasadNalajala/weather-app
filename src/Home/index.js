@@ -446,21 +446,7 @@ class Home extends Component{
   <path d="M41.2103 22.6361C42.2996 21.1495 42.7874 19.3063 42.5763 17.4754C42.3652 15.6444 41.4706 13.9607 40.0715 12.7611C38.6725 11.5615 36.8721 10.9345 35.0307 11.0054C33.1892 11.0764 31.4425 11.8401 30.1399 13.1439C28.8372 14.4476 28.0749 16.1951 28.0052 18.0369C27.9356 19.8787 28.5638 21.6788 29.7643 23.0772C30.9647 24.4756 32.6488 25.3691 34.4797 25.579C36.3105 25.7888 38.1531 25.2995 39.6387 24.209H39.6376C39.6713 24.254 39.7073 24.2968 39.7478 24.3384L44.0789 28.6701C44.2898 28.8812 44.576 28.9999 44.8744 29C45.1728 29.0001 45.4591 28.8816 45.6702 28.6707C45.8812 28.4597 45.9999 28.1735 46 27.8751C46.0001 27.5766 45.8817 27.2903 45.6707 27.0792L41.3396 22.7475C41.2994 22.7068 41.2562 22.6692 41.2103 22.635V22.6361ZM41.5005 18.3112C41.5005 19.1238 41.3405 19.9285 41.0295 20.6793C40.7186 21.43 40.2628 22.1122 39.6883 22.6868C39.1138 23.2615 38.4317 23.7173 37.681 24.0283C36.9303 24.3392 36.1258 24.4993 35.3132 24.4993C34.5007 24.4993 33.6961 24.3392 32.9455 24.0283C32.1948 23.7173 31.5127 23.2615 30.9382 22.6868C30.3636 22.1122 29.9079 21.43 29.5969 20.6793C29.286 19.9285 29.126 19.1238 29.126 18.3112C29.126 16.67 29.7778 15.096 30.9382 13.9355C32.0985 12.775 33.6723 12.123 35.3132 12.123C36.9542 12.123 38.528 12.775 39.6883 13.9355C40.8486 15.096 41.5005 16.67 41.5005 18.3112Z" fill="white"/>
 </svg>
 </div>
-{
-  suggestionList && suggestionList.length !== 0 && searchInput!=='' ? (
-    <div>
-      {
-        suggestionList.map((each) => (
-          <div key={each.id} className='suggestion-item-container' onClick={()=>this.onClickSuggestion(each.name)}>
-            <p className='search-item'>{each.name}</p>
-            <p className='search-item'>{each.sys.country}</p>
-          </div>
-        ))
-      }
-    </div>
-  ) : (suggestionList&& suggestionList.length==0 && searchInput!==''?<p className='error-msg'>Keep Searching!</p>:null)
-}
-          
+   
             </div>
             <div className='degreeParams'>
                 <button className={`degreeBtn ${celciusClass}`} onClick={this.changetoCelcius}>°C
@@ -471,6 +457,22 @@ class Home extends Component{
                 <button className={`degreeBtn ${farehn}`} onClick={this.changetoFarenh}>°F</button>
             </div>
         </div>
+        <div className='suggestion-container'>
+        {
+  suggestionList && suggestionList.length !== 0 && searchInput!=='' ? (
+ <>
+      {
+        suggestionList.map((each) => (
+          <div key={each.id} className='suggestion-item-container' onClick={()=>this.onClickSuggestion(each.name)}>
+            <p className='search-item'>{each.name}</p>
+            <p className='search-item'>{each.sys.country}</p>
+          </div>
+        ))
+      }
+    </>
+  ) : (suggestionList&& suggestionList.length==0 && searchInput!==''?<p className='error-msg'>Keep Searching!</p>:null)
+}</div>
+       
         <Weather weather={weather} cityName={cityName} foreCast={foreCast} isCelcius={isCelcius}/>
         <Now weather={weather}/>
         <FiveDayForecast fiveDayForeCast={weather.list.slice(0,5)} weather={weather}/>

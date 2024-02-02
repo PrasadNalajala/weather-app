@@ -13,8 +13,15 @@
     justify-content: space-around;
     padding-top: 10px;
     padding: 20px;
-    height: 130px;
+    align-items: center;
     
+  }
+  .suggestion-container{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    height: 80px;
   }
   .error-msg{
     color: red;
@@ -75,11 +82,12 @@
   .suggestion-item-container{
     display: flex;
     justify-content: space-evenly;
-    width: 300px;
+    align-items: center;
+    width: 500px;
     color: #ffffff;
-    background-color: #ab9eaa;
-    padding-left: 5px;
-    margin-right: 5px;
+    background-color: #73a2c1;
+    height: 42px;
+    margin-right: 80px;
     border: 1px solid #ccc; 
     cursor: pointer;
     outline: none;
@@ -91,9 +99,12 @@
   }
   @media (max-width:480px){
     .suggestion-item-container{
-        margin-top: 5px;
-        width: 185px;
-        margin-left: 5px;
+        height: 25px;
+        width: 190px;
+        margin-left: 18%;
+        border-radius: 2px;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
     }
     .search-item{
         font-size: 10px;
@@ -124,7 +135,7 @@
       
     }
     .card{
-      height: 70px;
+      /* height: 70px; */
     }
     .section-2{
       align-items: center;
