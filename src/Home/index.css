@@ -19,6 +19,7 @@
   .error-msg{
     color: red;
     font-family: 'Roboto';
+
     text-align: center;
   }
   .section-1{
@@ -50,7 +51,8 @@
     align-items: center;
     height: 40px;
     width: 100px;
-    font-family: 'Roboto';
+    font-family: 'Nunito', sans-serif;
+
     border-radius: 5px;
     color: #343A40;
     font-size: 18px;

@@ -1,5 +1,6 @@
 .cityName{
-    font-family: Roboto;
+    font-family: 'Poppins', sans-serif;
+
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -8,7 +9,8 @@
   .time{
     color: rgba(52, 58, 64, 0.90);
 
-font-family: Roboto;
+    font-family: 'Poppins', sans-serif;
+
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
@@ -24,7 +26,8 @@ line-height: normal;
 
 .degree{
     color: var(--main2, #343A40);
-    font-family: Roboto;
+    font-family: 'Maven Pro', sans-serif;
+
     font-size: 96px;
     font-style: normal;
     font-weight: 500;
@@ -33,7 +36,8 @@ line-height: normal;
 .time-sm{
     color: rgba(52, 58, 64, 0.80);
 text-align: center;
-font-family: Roboto;
+font-family: 'Montserrat', sans-serif;
+
 font-size: 32px;
 font-style: normal;
 font-weight: 400;
@@ -43,7 +47,8 @@ line-height: normal;
 .degree-sm{
     color: var(--main2, #343A40);
 text-align: center;
-font-family: Roboto;
+font-family: 'Montserrat', sans-serif;
+
 font-size: 32px;
 font-style: normal;
 font-weight: 400;

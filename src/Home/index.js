@@ -341,19 +341,15 @@ const weatherList=
 class Home extends Component{
   state={weather:weatherList,longitude:-0.118092,latitude:51.509865,error:'',cityName:"London",foreCast:dummyList,searchInput:'',isCelcius:true,suggestionList:[]}
 
-  consoleState=()=>{
-
-    console.log(this.state.cityName,this.state.weather)
-  }
-
+  
   fetchWeather=async()=>{
-    console.log('called fetch')
+    
     const {isCelcius,latitude,longitude}=this.state
     const units=isCelcius?'metric':'imperial'
 
     const responseData=await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=${units}&APPID=d9119b95bb62522f73b0bd06fef7bc99`)
     const jsonData=await responseData.json()
-    this.setState({weather:jsonData,foreCast:jsonData.list.slice(0,4),cityName:jsonData.city.name},()=>this.consoleState())
+    this.setState({weather:jsonData,foreCast:jsonData.list.slice(0,4),cityName:jsonData.city.name})
   }
   
   submitInput=async()=>{
@@ -376,9 +372,8 @@ class Home extends Component{
   }
 
   handleInput=async(event)=>{
-    //console.log(this.state.suggestionList)
+    
       if (event.key!=='Enter'){
-        // console.log(event.target.value)
       this.setState({searchInput:event.target.value})
       
       try{
@@ -388,11 +383,11 @@ class Home extends Component{
       const data=await response.json()
       this.setState({suggestionList:data.list})
       }catch(e){
-        console.log(e)
+        console.log("Got an Eror:",e)
       }
       }
       else{
-        // console.log("Enter")
+       
         this.submitInput()
       }
   }

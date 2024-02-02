@@ -14,7 +14,7 @@ const formattedDateTime = `${dayOfWeek} ${formattedTime}`;
 
 
 
-// console.log(fourHoursList)
+
     return(
         <div className='card-2 '>
             <div className='card-sm'>
@@ -25,15 +25,13 @@ const formattedDateTime = `${dayOfWeek} ${formattedTime}`;
                 <div>
                     <h1 className='degree'>{Math.floor(foreCast[0].main.temp)}{scale}</h1>
                 </div>
+                <p className='error-msg'>{weather.list[0].weather[0].description}</p>
             </div>
             <div className='weather-details'>
                 {
                     
 
                     foreCast.map(each=>{
-                        // console.log(each)
-                        console.log('Weather Condition:', each.weather[0].main);
-                        console.log('Temperature:', each.main.temp);
                         const date = new Date(each.dt_txt);
                         const formattedTime = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit',hour12:false });
                         return(
