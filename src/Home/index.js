@@ -466,7 +466,7 @@ class Home extends Component{
                 <button className={`degreeBtn ${celciusClass}`} onClick={this.changetoCelcius}>°C
                 </button>
                 <span>
-                  / 
+                  
                 </span>
                 <button className={`degreeBtn ${farehn}`} onClick={this.changetoFarenh}>°F</button>
             </div>

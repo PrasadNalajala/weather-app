@@ -25,7 +25,7 @@ const formattedDateTime = `${dayOfWeek} ${formattedTime}`;
                 <div>
                     <h1 className='degree'>{Math.floor(foreCast[0].main.temp)}{scale}</h1>
                 </div>
-                <p className='error-msg'>{weather.list[0].weather[0].description}</p>
+                <p className='error-msg1'>{weather.list[0].weather[0].description}</p>
             </div>
             <div className='weather-details'>
                 {

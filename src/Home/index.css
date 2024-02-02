@@ -65,6 +65,7 @@
   .bolded{
     font-weight: bold;
     font-size: 15px;
+    
   }
   .search-container{
     display: flex;
@@ -81,7 +82,12 @@
     margin-right: 5px;
     border: 1px solid #ccc; 
     cursor: pointer;
+    outline: none;
     border-radius: 2px;
+  }
+  .search-icon{
+    cursor: pointer;
+    outline: none;
   }
   @media (max-width:480px){
     .suggestion-item-container{
