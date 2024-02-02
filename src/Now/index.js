@@ -13,7 +13,7 @@ const pressure = firstWeatherItem.main.pressure;
     return(
         <div className='card-3'>
             
-            <h1 className='now'>Now</h1>
+            
             <div className='day-details-container'>
             <div className='day-details1'>
                 <p className='measure'>Chance of Rain</p>

@@ -4,6 +4,8 @@
     color: #ffffff;
     padding: 10px;
     height: 188px;
+    display: flex;
+    justify-content: center;
 }
 .now{
     font-size: 18px;
@@ -20,7 +22,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
+    width: 100%;
 }
 .measure{
     opacity: 0.8;

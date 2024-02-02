@@ -1,7 +1,8 @@
 import './index.css'
 
 const FiveDayForecast=(props)=>{
-    const {FiveDayForeCast,weather}=props
+    const {fiveDayForeCast,weather}=props
+    //console.log(weather)
     let formattedForecast=[]
 if (weather.list) {
     
@@ -29,9 +30,9 @@ if (weather.list) {
       }
     });
   
-     formattedForecast = Object.values(uniqueForecast);
+    formattedForecast = Object.values(uniqueForecast);
   
-    //console.log(formattedForecast);
+    // console.log(formattedForecast);
   } else {
     console.error("Invalid data format. 'list' property not found.");
   }
@@ -56,7 +57,7 @@ if (weather.list) {
     <div key={index} className='card-details'>
       <div className='forecast-container'>
         <p className='forecast-p day day-p'>{each.day}</p>
-        <p className='forecast-p'>{each.chanceOfRain}%</p>
+        <p className='forecast-p'>{Math.floor(each.chanceOfRain)}%</p>
         <p className='forecast-p'>{each.humidity}%</p>
         <p className='forecast-p'>{each.wind.speed}km/h</p>
         <p className='forecast-p'>{each.temperature}</p>

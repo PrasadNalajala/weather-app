@@ -16,6 +16,7 @@ line-height: normal;
   }
 .card-2{
     height: 400px;
+    background: linear-gradient(to right, #ffffff, #f0f0f0);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -71,6 +72,9 @@ line-height: normal;
         padding-left: 13px;
         padding-top: 5px;
         height: 340px;
+    }
+    .card-sm{
+        margin-left: 7%;
     }
     .cityName{
         font-size: 20px;
