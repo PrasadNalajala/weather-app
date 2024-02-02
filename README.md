@@ -1,6 +1,6 @@
-Certainly! Here's the updated README with the provided repository link:
 
-```markdown
+
+
 # WeatherApp Web README
 
 ## 🌤️ Overview
@@ -66,6 +66,4 @@ Encountering gremlins or have a genius idea? We're all ears! [Open an issue](htt
 
 Thank you for choosing WeatherApp! Stay weather-wise and adventure-ready. 🌈⛅
 
-```
-
-Make sure to replace the placeholders with your actual information. Feel free to customize it further based on your project's specific needs.
+``
