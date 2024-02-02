@@ -1,6 +1,6 @@
 
 
-
+```markdown
 # WeatherApp Web README
 
 ## 🌤️ Overview
@@ -17,14 +17,12 @@ Welcome to WeatherApp, a sleek and responsive weather application built with Rea
 
 - **Location-based Weather:** Let WeatherApp do the work! Automatically detect your location for hyper-local updates, or manually search for weather anywhere on the map.
 
-- **Interactive Maps:** Visualize weather patterns with interactive maps, letting you track storms, rain, and other meteorological magic.
-
 - **Customizable Units:** Personalize your experience by tweaking units
 
 ## 🌐 Getting Started
 
 1. **Access the Website:**
-   - Visit (https://prasadnalajala.github.io/weather-app/) and dive into the weather wonders!
+   - Visit [WeatherApp Website](https://weather-app-prasadnalajala.vercel.app/) and dive into the weather wonders!
 
 2. **Permissions:**
    - Grant location access for precise local weather info.
@@ -32,6 +30,26 @@ Welcome to WeatherApp, a sleek and responsive weather application built with Rea
 
 3. **User Interface:**
    - Explore the chic user interface, effortlessly navigating through current weather, hourly forecasts, and the 7-day forecast.
+
+4. **How to Run Locally:**
+   - Clone the repository to your local machine:
+     ```bash
+     git clone https://github.com/PrasadNalajala/weather-app.git
+     ```
+   - Navigate to the project directory:
+     ```bash
+     cd weather-app
+     ```
+   - Install dependencies:
+     ```bash
+     npm install
+     ```
+   - Obtain an API key from [OpenWeatherMap API](https://openweathermap.org/api) and replace the placeholder in `src/utils/api.js`.
+   - Start the application:
+     ```bash
+     npm start
+     ```
+   - Open your browser and visit [http://localhost:3000](http://localhost:3000) to view WeatherApp locally.
 
 ## 🤝 Contributing
 
@@ -66,4 +84,6 @@ Encountering gremlins or have a genius idea? We're all ears! [Open an issue](htt
 
 Thank you for choosing WeatherApp! Stay weather-wise and adventure-ready. 🌈⛅
 
-``
+
+```
+
