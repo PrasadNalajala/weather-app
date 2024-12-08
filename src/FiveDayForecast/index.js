@@ -7,7 +7,7 @@ const FiveDayForecast=(props)=>{
 if (weather.list) {
     
     const weatherList = weather.list;
-  
+
    
     const uniqueForecast = {};
   
